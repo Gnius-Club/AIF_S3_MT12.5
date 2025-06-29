@@ -38,10 +38,11 @@
                 <li><a href="#activity-2">2</a></li>
                 <li><a href="#activity-3">3</a></li>
                 <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
             </ul>
 
             <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>💡 Esta es una sesión de refuerzo práctico para implementar sistemas de control proporcional.</p>
                 <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
             </div>
         </aside>
@@ -70,20 +71,22 @@
                                 <td>
                                     <strong>Objetivos:</strong>
                                     <ul>
-                                        <li>Que los estudiantes diseñen e implementen un sistema de control proporcional.</li>
-                                        <li>Que utilicen un sensor analógico para controlar un actuador de manera graduada, no solo On/Off.</li>
-                                        <li>Que comprendan y apliquen el concepto de mapeo de valores para escalar datos entre un sensor y un actuador.</li>
+                                        <li>Que los estudiantes refuercen su comprensión de los sistemas de control autónomo.</li>
+                                        <li>Que diseñen e implementen un sistema de control proporcional.</li>
+                                        <li>Que utilicen un sensor analógico para controlar la acción de un actuador de manera graduada y proporcional a la lectura.</li>
                                     </ul>
                                     <strong>Secuencia de Clase:</strong>
                                     <ul>
-                                        <li><strong class="tactic-highlight">⚡REPASO ESTRATÉGICO:</strong> Repaso conceptual guiado por IA sobre el control proporcional.</li>
-                                        <li><strong class="tactic-highlight">⚡BRAIN SPARK (DESAFÍO):</strong> Diseño, Vibe Coding, e implementación de un sistema de control proporcional.</li>
-                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de proyectos y reflexión sobre la importancia de la acción graduada.</li>
+                                        <li><strong class="tactic-highlight">⚡A.I. GYM:</strong> Repaso estratégico y contextualización del control proporcional.</li>
+                                        <li><strong class="tactic-highlight">⚡VIBE CODING:</strong> Diseño de la intención y generación de código por IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ANÁLISIS DE CÓDIGO:</strong> Lectura y comprensión guiada del código generado ("Taming the Genie").</li>
+                                        <li><strong class="tactic-highlight">⚡IMPLEMENTACIÓN Y DEBUGGING:</strong> Pruebas de hardware/software y depuración colaborativa con Xolo.</li>
+                                        <li><strong class="tactic-highlight">⚡GNIUS STORM:</strong> Showcase de soluciones, síntesis de "insights" y reflexión sobre el proceso de diseño.</li>
                                     </ul>
                                     <strong>Entregable Clave:</strong>
                                     <ul>
-                                        <li>Un proyecto funcional que demuestra control proporcional: el ángulo de un servo o el brillo de un LED cambia de forma continua en respuesta a un sensor analógico.</li>
-                                        <li>Código que incluye una función de mapeo para escalar el rango del sensor al rango del actuador.</li>
+                                        <li>Un script funcional en MicroPython que implementa un control proporcional, utilizando una función de mapeo para traducir el rango de un sensor al rango de un actuador (servo o brillo de LED).</li>
+                                        <li>Comprensión demostrada del proceso de calibración de rangos de sensores para un mapeo preciso.</li>
                                     </ul>
                                 </td>
                                 <td>
@@ -93,19 +96,21 @@
                                         <li>Conexión a internet estable.</li>
                                         <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>) en modo Python.</li>
                                         <li>Chat "Agente Gnius" (Xolo) operativo.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-7).</li>
-                                        <li>Por equipo de 2: 1 Micro:bit v2 con placa IOTbit, cables, y una selección de sensores analógicos (Luz, Ruido, Potenciómetro) y actuadores (Micro-servo, LED).</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-10).</li>
+                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2.</li>
+                                        <li>1 Micro-servo y/o LEDs por equipo.</li>
+                                        <li>Sensores analógicos (Ruido, Luz, Humedad) por equipo.</li>
                                     </ul>
                                     <strong>Preparación Previa para ESTA Sesión:</strong>
                                     <ol>
                                         <li><strong>Verificación del Entorno Digital y Físico (Interna):</strong>
                                             <ul>
-                                                <li>Asegurar que los servos, LEDs y sensores analógicos estén funcionales.</li>
-                                                <li>Verificar la funcionalidad del chat de Xolo y tener cargada la presentación.</li>
+                                                <li>Asegurar que los sensores analógicos y actuadores (servos, LEDs) estén funcionales.</li>
+                                                <li>Verificar la conexión a internet y el acceso a MakeCode.</li>
                                             </ul>
                                         </li>
-                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar el concepto de control proporcional y la matemática de la función de mapeo. Estar preparado para guiar a los estudiantes en la calibración de los rangos de sus sensores.</li>
-                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener un "Medidor de Nivel de Ruido Visual" o un "Atenuador de Luz" completamente funcional para demostrar el principio de mapeo y calibración en vivo.</li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Repasar el concepto de control proporcional y, crucialmente, la fórmula matemática de mapeo (o regla de tres). Estar preparado para guiar la depuración de la lógica de mapeo.</li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener una solución funcional para el "Medidor de Nivel de Ruido Visual" para demostrar el mapeo y el proceso de calibración del rango del sensor.</li>
                                     </ol>
                                 </td>
                             </tr>
@@ -117,12 +122,12 @@
 
             <div class="activity-card" id="activity-1">
                 <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
-                <p>Establecer el tono de la sesión, activar la IA y presentar el concepto de control proporcional.</p>
+                <p>Establecer el tono de la sesión práctica, activar la IA y presentar el concepto de control proporcional.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto del Desafío</h3>
-                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y enmarca la sesión como un refinamiento de la acción.</p>
+                            <h3>Paso 1: Bienvenida y Contexto Estratégico</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque de la misión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
@@ -134,12 +139,12 @@
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Activación y Personalización de Xolo</h3>
-                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual con Xolo.</p>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Inicien su sesión con Xolo como es habitual, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo, soy Andrea, perfil Piloto, y me interesa el control fino de los sistemas. Lista para el Desafío 12.5.'</strong></p>
+                                <p class="dialogue assistant">Inicien su sesión con Xolo como de costumbre, compartiendo su perfil de aprendizaje e interés. Por ejemplo: <strong>'Hola Xolo. Soy Ana, perfil Piloto, y me interesa el control fino de los sistemas.'</strong> Esto preparará a su socio de IA para la sesión de hoy. Procedan.</p>
                             </div>
                         </div>
                     </div>
@@ -147,30 +152,18 @@
             </div>
 
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: A.I. GYM (Control Proporcional) ⏰ 5 minutos</h2>
-                <p>Reforzar el concepto clave de control proporcional de manera rápida y estratégica.</p>
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 2 minutos</h2>
+                <p>Clarificar la meta de aprendizaje enfocada en la implementación del control proporcional.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Instrucción para el Repaso Estratégico</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador dirige a los alumnos para que investiguen el concepto del día.</p>
+                            <h3>Paso 1: "I Can Statement" de Control Fino</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Antes de diseñar, vamos a entender el concepto. De forma individual, pídanle a Xolo que les explique el 'Control Proporcional' con una analogía simple y cómo se aplicaría a un servo.</p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Discusión y Síntesis Rápida</h3>
-                            <p>El facilitador modera una breve discusión para asegurar la comprensión.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">(Tras unos minutos) "Rápidamente, ¿cuál es la idea central del control proporcional? (Esperar respuesta: 'la salida es proporcional a la entrada', 'una acción graduada'). Exacto. No es todo o nada, es un 'más o menos'. Con este concepto claro, pasemos al desafío."</p>
+                                <p class="dialogue assistant">La meta de hoy es añadir un nuevo nivel de sofisticación a sus sistemas. Al finalizar esta sesión, podrán afirmar: <strong>'Yo puedo implementar un sistema de control proporcional, mapeando el rango de un sensor al rango de un actuador para una respuesta graduada.'</strong></p>
                             </div>
                         </div>
                     </div>
@@ -178,42 +171,30 @@
             </div>
 
             <div class="activity-card" id="activity-3">
-                 <h2>⚡ Actividad 3: Brain Spark (Diseño de Control Proporcional) ⏰ 27 minutos</h2>
-                <p>Los estudiantes diseñan, implementan y depuran un sistema de control proporcional en parejas.</p>
+                <h2>⚡ Actividad 3: A.I. GYM (Control Proporcional) ⏰ 5 minutos</h2>
+                <p>Facilitar una sesión de aprendizaje sobre el concepto de control proporcional y la necesidad del mapeo de valores.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
-                             <p>(Proyectar Diapositiva 4) El facilitador presenta el desafío de diseño libre.</p>
+                            <h3>Paso 1: Instrucción para el Aprendizaje Conceptual</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador dirige a los alumnos para que aprendan sobre el control proporcional.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, su desafío. Formen sus parejas. Su misión es diseñar un sistema de control proporcional **libre**. Usen un sensor analógico (luz, ruido, temperatura) para controlar la acción de un actuador (el ángulo de un servo o el brillo de un LED) de forma graduada. La creatividad es suya.</p>
+                                <p class="dialogue assistant">Iniciamos el A.I. GYM. De forma individual, su tarea es entender el concepto de hoy. Usen este prompt con Xolo: <strong>'Xolo, ¿qué es el "control proporcional" y cómo lo usaríamos con un servo?'</strong></p>
                             </div>
                         </div>
                     </div>
-                    <div class="step-card">
+                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Ideación, Vibe Coding y Mapeo</h3>
-                            <p>(Proyectar Diapositiva 5) Las parejas definen su 'vibe' y colaboran con Xolo, prestando atención a la función de mapeo.</p>
+                            <h3>Paso 2: Síntesis del Facilitador</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador resume verbalmente la idea principal del mapeo.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                 <p class="dialogue assistant">Discutan y definan su lógica. Luego, descríbanla a Xolo. Por ejemplo: <strong>'Xolo, vibe de vúmetro visual: queremos que el ángulo de un servo sea proporcional al nivel de ruido. Silencio es 0 grados, ruido máximo es 180 grados.'</strong> Pídanle a Xolo que incluya una función de 'mapeo' en el código y que la comente.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Implementación y Depuración de Mapeo</h3>
-                             <p>(Proyectar Diapositiva 6) Las parejas implementan el código y enfrentan el desafío de la calibración de rangos.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">El concepto clave aquí es el **mapeo**. Si su sistema no responde de forma proporcional, el error probablemente esté en los rangos que definieron en esa función. El primer paso para depurar es la calibración. Usen `print()` para descubrir el rango real de su sensor en este cuarto. Describan el problema a Xolo: <strong>'Xolo, nuestro servo solo se mueve en los extremos.'</strong> Él les guiará para que entiendan cómo la calibración incorrecta afecta el mapeo."</p>
+                                <p class="dialogue assistant">Excelente. Como Xolo les explicó, la clave es que la acción es proporcional a la señal. Para lograr esto, necesitamos una herramienta matemática para 'traducir' el lenguaje del sensor (que puede ir de 0 a 1023) al lenguaje del actuador (que para un servo va de 0 a 180). Esta traducción se llama **mapeo**.</p>
                             </div>
                         </div>
                     </div>
@@ -221,42 +202,85 @@
             </div>
 
             <div class="activity-card" id="activity-4">
-                <h2>⚡ Actividad 4: Gnius STORM (Reflexión sobre Control Fino) ⏰ 5 minutos</h2>
-                <p>El facilitador modera una reflexión final enfocada en la importancia y aplicación del control proporcional.</p>
+                 <h2>⚡ Actividad 4: Brain Spark (Control Proporcional) ⏰ 27 minutos</h2>
+                <p>Los estudiantes diseñan e implementan un sistema de control proporcional en parejas.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
-                            <p>(Proyectar Diapositiva 7) Los alumnos reflexionan individualmente sobre las aplicaciones del control proporcional.</p>
+                            <h3>Paso 1: Presentación del Desafío y Formación de Parejas</h3>
+                             <p>(Proyectar Diapositiva 6) El facilitador presenta el desafío de diseño libre y da la instrucción de formar parejas.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Vamos a nuestro cierre. Primero, un minuto de reflexión individual. Piensen: ¿en qué otra situación de la vida real un control proporcional es mucho mejor que uno simple de encendido y apagado?</p>
+                                <p class="dialogue assistant">Ahora, su desafío. Formen sus parejas. Su misión es diseñar un sistema de control proporcional **libre**. Usen un sensor analógico para controlar la acción de un actuador de forma graduada. Pueden hacer un medidor visual de ruido, un dimmer de luz, un ventilador de velocidad variable, etc.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diseño de la "Vibe" y Generación de Código</h3>
+                            <p>(Proyectar Diapositiva 7) Las parejas diseñan su sistema, lo comunican a Xolo y reciben el código, incluyendo la función de mapeo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Definan la 'vibe' de su sistema y luego trabajen con Xolo para generar el código. Sean claros en que necesitan una respuesta proporcional. Por ejemplo: <strong>'Xolo, queremos que el ángulo de un servo sea proporcional al nivel de ruido. Si hay silencio, el ángulo es 0; si el ruido es máximo, el ángulo es 180. Necesitamos el código, incluyendo la función de mapeo.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Implementación y Depuración de Mapeo</h3>
+                             <p>(Proyectar Diapositiva 8 y 9) Las parejas implementan su sistema, centrándose en la calibración y la correcta aplicación de la función de mapeo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Implementen su sistema. El concepto clave aquí es la función de 'mapeo'. Si su sistema no responde de forma proporcional, el error probablemente está en los parámetros de esa función. El primer paso siempre es la **calibración**: usen `print()` para descubrir el rango real de su sensor. Luego, ajusten los valores `from_low` y `from_high` en su mapeo. Describan sus problemas a Xolo y él los guiará en este proceso de calibración y ajuste.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM (Reflexión) ⏰ 5 minutos</h2>
+                <p>El facilitador modera una reflexión final enfocada en las aplicaciones y la importancia del control proporcional.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
+                            <p>(Proyectar Diapositiva 10) Instrucción para la reflexión individual.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Bien, para cerrar, nuestro Think-Pair-Share. Individualmente, un minuto para pensar: ¿En qué otra situación de la vida real un control proporcional es mucho mejor que un simple control On/Off?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Gnius STORM (Pair - Parejas)</h3>
-                            <p>Los alumnos discuten en parejas cómo este concepto se aplica a proyectos más grandes.</p>
+                            <p>Los alumnos discuten cómo este concepto podría aplicarse a proyectos futuros.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, en parejas, discutan cómo este concepto de control graduado podría aplicarse a su proyecto final del curso o a una idea más ambiciosa. ¿Cómo la refinaría? Tienen dos minutos.</p>
+                                <p class="dialogue assistant">Ahora, en parejas, discutan durante dos minutos cómo este concepto de control proporcional podría aplicarse a su proyecto final del curso para hacerlo más sofisticado o eficiente.</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 3: Gnius STORM (Share & Synthesis)</h3>
-                            <p>Algunas parejas comparten su proyecto y el facilitador cierra la sesión.</p>
+                            <p>Algunas parejas comparten sus proyectos y el facilitador cierra la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">Escuchemos de algunas parejas. Compartan el sistema de control proporcional que diseñaron y expliquen por qué una respuesta graduada es útil en su caso. (Escuchar 2-3 respuestas). Excelente. Hoy han dominado el control proporcional, un concepto que separa los sistemas básicos de los sistemas de ingeniería refinados. Esta habilidad de crear una respuesta matizada y eficiente es lo que define a los sistemas de control modernos. Están más que listos para entrar al mundo de las plataformas profesionales de IoT.</p>
+                                <p class="dialogue assistant">Escuchemos a algunas parejas. Compartan el sistema de control proporcional que diseñaron y por qué una respuesta graduada es útil en su caso. (Escuchar respuestas). Han dominado el control proporcional, un concepto que separa los sistemas básicos de los sistemas de ingeniería refinados. Esta habilidad de crear una respuesta matizada es lo que define a los sistemas de control modernos. Están más que listos para entrar al mundo de las plataformas profesionales de IoT.</p>
                             </div>
                         </div>
                     </div>
